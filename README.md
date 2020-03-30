@@ -15,5 +15,9 @@ And now the page is shown as the following img.
 sudo apt-get install vlc
 sudo apt-get install vlc
 
-## run the jupyter notebook script now
+## run the jupyter notebook script
+
+## FAQ
+1. Problem with amazon fresh and whole food.
+I find that at client side, amazon fresh and whole food share the same json file, and at amazon server side, it will detect whether the user is at wholefood or amazon fresh page. Thus, it currenlty seems unlikely to monitor the delivery window for both amazon fresh and wholefood now. Wait to be solved.  
 
