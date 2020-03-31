@@ -11,13 +11,33 @@ And now the page is shown as the following img.
 
 (3) Download the headers file at Place 2, and save it at this proj path: data/www.amazon.com.json
 
-### 2. install libs to play mp3
-sudo apt-get install vlc
-sudo apt-get install vlc
+### 2. find the session id and brand id in the url 
+(1) for amazon fresh  
+Go to the page named "before you checkout", which is the latst page before the checkout page just like its name. You'll find its url format is:   
+```
+https://www.amazon.com/alm/byg?sessionID=XXXXX&useDefaultCart=1&brandId=YYYYY (....)
+```
+Thus session_id = XXXXX, amazon_fresh_brandid = YYYYY
 
-## run the jupyter notebook script
+(2) for amazon wholefoods    
+Also go to the page named "before you checkout", you'll find its url format is: 
+```
+https://www.amazon.com/alm/byg?brandId=ZZZZZ
+```
+Thus amazon_wholefoods_brandid = ZZZZZ
+
+
+### 3. install libs to play mp3
+```
+sudo apt-get install vlc
+sudo apt-get install vlc
+```
+
+Now, you have found all the preps, just run the jupyter script to start to monitor the delivery window.
+
 
 ## FAQ
-1. Problem with amazon fresh and whole food.
-I find that at client side, amazon fresh and whole food share the same json file, and at amazon server side, it will detect whether the user is at wholefood or amazon fresh page. Thus, it currenlty seems unlikely to monitor the delivery window for both amazon fresh and wholefood now. Wait to be solved.  
+1. Problem with amazon fresh and whole food.  
+[03/29] I find that at client side, amazon fresh and whole food share the same json file, and at amazon server side, it will detect whether the user is at wholefood or amazon fresh page. Thus, it currenlty seems unlikely to monitor the delivery window for both amazon fresh and wholefood now. Wait to be solved.    
+[03/30] This problem has been solved, 
 
