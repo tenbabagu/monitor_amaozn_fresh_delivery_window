@@ -29,7 +29,7 @@ Thus amazon_wholefoods_brandid = ZZZZZ
 
 ### 3. install libs to play mp3
 ```
-sudo apt-get install vlc
+sudo apt-get update
 sudo apt-get install vlc
 ```
 
