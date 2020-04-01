@@ -41,3 +41,9 @@ Now, you have found all the preps, just run the jupyter script to start to monit
 [03/29] I find that at client side, amazon fresh and whole food share the same json file, and at amazon server side, it will detect whether the user is at wholefood or amazon fresh page. Thus, it currenlty seems unlikely to monitor the delivery window for both amazon fresh and wholefood now. Wait to be solved.    
 [03/30] This problem has been solved, 
 
+## Supermarket List
+Amazon fresh - support monitoring  
+Amazon wholefoods - support monitoring   
+[shipt](https://www.shipt.com/)  
+[instacart](https://www.instacart.com/)  
+[vons](https://www.vons.com/)
